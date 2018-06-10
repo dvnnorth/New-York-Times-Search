@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- jQuert -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <title>New York Times Search</title>
+
+    <style>
+        .page-header {
+            text-align: center;
+            background-color: #191970;
+            color: white;
+            padding: 20px;
+            margin-top: 0px;
+        }
+
+        .input-group {
+            width: 100%;
+        }
+
+        #searchTerm {
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="page-header">
+                    <h1>
+                        <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> New York Times Search</h1>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">Search Parameters</div>
+                    <div class="panel-body">
+                        <h3>Search Term:</h3>
+                        <div class="panel panel-default">
+                            <div class="input-group">
+                                <input id="searchTerm" type="text">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <h3>Number of Records to Retrieve:</h3>
+                            <select class="form-control input-lg" id="recordsRetrieve">
+                                <option>10</option>
+                                <option>20</option>
+                                <option>30</option>
+                            </select>
+                        </div>
+
+                        <h3>Start Year (Optional):</h3>
+                        <div class="panel panel-default">
+                            <div class="input-group" id="startYear">
+                                <input id="searchTerm" type="text">
+                            </div>
+                        </div>
+                        <h3>End Year (Optional):</h3>
+                        <div class="panel panel-default">
+                            <div class="input-group" id="endYear">
+                                <input id="searchTerm" type="text">
+                            </div>
+                        </div>
+                        <div class="btn-group" role="group" aria-label="...">
+                            <button type="button" class="btn btn-default">
+                                <span class="glyphicon glyphicon-search" aria-hidden="true"></span> Search</button>
+                            <button type="button" class="btn btn-default">
+                                <span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Clear Results</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <span class="glyphicon glyphicon-calendar" aria-hidden="true"></span> Top Articles</div>
+                    <div class="panel-body" id="topArticles">
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <p><strong>This paragraph is for the title</strong></p>
+                                <p>This paragraph is to credit writer </p>
+                                <p>This paragraph is for the section</p>
+                                <p>This paragraph is for date of article</p>
+                                <p><a href="https://www.newyorktimes.com">Here you will place the link to article</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
